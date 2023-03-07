@@ -1,9 +1,3 @@
----
-layout: page
-title: Read Me
-permalink: README.html
----
-
 # Title: How to Host a Resume on Github Pages using VSCode and Jekyll
 
 ## Purpose
