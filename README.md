@@ -61,7 +61,7 @@ title: Resume
 permalink: resume.html    
 ---
 ```
-1.  **Save** the file
+6.  **Save** the file
 
 ### 4. Add the Jekyll theme
 
