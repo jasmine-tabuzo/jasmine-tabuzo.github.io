@@ -22,7 +22,7 @@ Additionally, this guide will teach you some of Etter's key principals in techni
 > 
 > To find Etter's book, see the [More Resources](https://jasmine-tabuzo.github.io/README.html#more-resources) sub-section.
 
-### Creating your GitHub Page
+### 1. Create your GitHub Page
 
 > Etter's Key Principal: Share/host documents on a distributed version control system.   
 > 
@@ -33,17 +33,17 @@ Additionally, this guide will teach you some of Etter's key principals in techni
 3. Set the repository name to `[your GitHub username].github.io`
     - For example, my username is `jasmine-tabuzo`, so my repository name would be `jasmine-tabuzo.github.io`.
 
-### Creating a Jekyll site
+### 2. Create a Jekyll site
 
 > Etter's Key Principle: Format a document with a static site generator    
 > 
 >  As Etter describes, static sites have "speed, simplicity, portability, and security."  
 
-4. Install Ruby by following steps 1 & 2 of these [instructions](https://jekyllrb.com/docs/installation/windows/)
-5. Install Jekyll by following steps 3 & 4 of these [instructions](https://jekyllrb.com/docs/installation/windows/)
-6. Create a new Jekyll site by following [steps 2-6](https://jekyllrb.com/docs/) 
+1. Install Ruby by following steps 1 & 2 of these [instructions](https://jekyllrb.com/docs/installation/windows/)
+2. Install Jekyll by following steps 3 & 4 of these [instructions](https://jekyllrb.com/docs/installation/windows/)
+3. Create a new Jekyll site by following [steps 2-6](https://jekyllrb.com/docs/) 
 
-### Adding your Resume to the site
+### 3. Add your Resume to the site
 
 > Etter's Key Principle: Use a lightweight markup language
 >
@@ -63,20 +63,20 @@ permalink: resume.html
 ```
 1.  **Save** the file
 
-### Adding the Jekyll theme
+### 4. Add the Jekyll theme
 
 > Etter's Key Principle: Format a document with a static site generator    
 > 
 >  In addition to using a static site generator, Etter recommends to take some time to customize the theme. Etter states to "focus on navigation and approachability." This is your chance to differentiate your resume from other ones out there!  
 
-10. Open the `_config.yml` file
-11. Add this line to the end of the file `remote_theme: pmarsceill/just-the-docs` 
-12. Save the `_config.yml` file
-13. Open the `Gemfile` file
-14. Change `gem "minima"` to `gem "just-the-docs"`
-15. Save the `Gemfile` file
+1. Open the `_config.yml` file
+2. Add this line to the end of the file `remote_theme: pmarsceill/just-the-docs` 
+3. Save the `_config.yml` file
+4. Open the `Gemfile` file
+5. Change `gem "minima"` to `gem "just-the-docs"`
+6. Save the `Gemfile` file
 
-### Uploading your Jekyll site to GitHub
+### 5. Upload your Jekyll site to GitHub
 
 1.  Go to your repository on GitHub
 2.  Select **Add file** 
