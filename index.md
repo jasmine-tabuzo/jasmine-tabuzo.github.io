@@ -21,7 +21,7 @@ Majors: Management Information Systems & Actuarial Mathematics
 ## Technical Skills
 
 - **Work Experience in**: PHP, JavaScript, React, SQL, Go, Git, C#, C++, Groovy
-- **Course Knowledge in**: HTML, CSS, Java, C, Prolog, LC-3 Assembly, Processing, MongoDB, - Object-Oriented Programming
+- **Course Knowledge in**: HTML, CSS, Java, C, Prolog, LC-3 Assembly, Processing, MongoDB, Object-Oriented Programming
 - **Familiar with**: Python, VBA
 
 ## Work Experience
