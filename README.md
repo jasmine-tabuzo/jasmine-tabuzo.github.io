@@ -1,4 +1,4 @@
-# How to Host a Resume on Github Pages using VSCode and Jekyll
+# How to Host a Resume on GitHub Pages using VSCode and Jekyll
 
 ## Purpose
 The purpose of this guide is to teach you how to host a resume on GitHub Pages using Visual Studio Code and Jekyll.     
