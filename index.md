@@ -1,7 +1,6 @@
 ---
 layout: home
 title: Resume
-permalink: resume.html
 ---
 
 # Jasmine Tabuzo  
