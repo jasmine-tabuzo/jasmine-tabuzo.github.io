@@ -136,7 +136,7 @@ title: Resume
 Congratulations! You have successfully hosted your resume on GitHub Pages using Jekyll and Visual Studio Code. 
 
 You should now have a hosted resume that looks like the one shown below: 
-![resume](images/resume.gif)
+![resume](images/resume-demo.gif)
 
 ### More Resources
 
