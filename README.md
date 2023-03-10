@@ -79,7 +79,7 @@ This guide is intended for Windows users. Additionally, this guide assumes you h
 
 > *Etter's Key Principle: Use a lightweight markup language*
 >
-> As the prerequisites state, your resume must be in Markdown format. According to Etter, Markdown is the most widely used lightweight markup language in the world. Lightweight markup makes it easier to build websites using human-readable content. Additionally, Etter mentions the separation between content and style. By using markdown, you can easily apply various themes and styles to your content!
+> As the prerequisites state, your resume must be in Markdown format. According to Etter, Markdown is the most widely used lightweight markup language in the world. Lightweight markup makes it easier to produce XML, which is used to build websites. Thus, lightweight markup makes it easier to build websites using human-readable content. So, by having your resume in Markdown format, you are able to quickly turn it into content on a hosted website!
 
 1. Open the **File Explorer** ![File Explorer](images/file-explorer.PNG)
 2. Navigate to the `myresume` folder
@@ -104,8 +104,7 @@ title: Resume
 
 > *Etter's Key Principle: Format a document with a static site generator*   
 > 
->  Another advantage of using a static site generator for your resume is that you don't need to know HTML and CSS. 
-> In addition to using a static site generator, Etter recommends to take some time to customize the theme. Etter states to "focus on navigation and approachability." This is your chance to differentiate your resume from other ones out there!  
+> In addition to using a static site generator, Etter recommends to take some time to customize the theme. Etter states to "focus on navigation and approachability." This is your chance to differentiate your resume from other ones out there! This is simple to do because another advantage of using a static site generator for your resume is that you don't need to know HTML and CSS. You just have to provide a theme and the static site generator will apply it to your content. 
 
 1. Open the `_config.yml` file in Visual Studio Code
 2. Replace `theme: minima` with `remote_theme: just-the-docs/just-the-docs` 
@@ -156,7 +155,7 @@ You should now have a hosted resume that looks like the one shown below:
 ## FAQs
 
 - Why is Markdown better than a word processor? 
-    - Markdown is better than a word processor because of its ease-of-use and flexibility. A document written in Markdown can easily be converted to other file types, such as a PDF or HTML file. 
+    - Markdown is better than a word processor because of its ease-of-use and flexibility. A document written in Markdown can easily be converted to other file types, such as a PDF or HTML file, whereas Word requires you to style the content as you write it.
 
 - Where can I find more Jekyll themes? 
     - You can find more Jekyll themes [here](https://jekyllrb.com/docs/themes/).
