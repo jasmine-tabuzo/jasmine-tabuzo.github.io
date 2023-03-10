@@ -8,13 +8,13 @@ Additionally, this guide will teach you some of Andrew Etter's key principals in
 2. Format a document with a static site generator
 3. Share/host documents on a distributed version control system
 
-This guide is intended for Windows users. Additionally, this guide assumes you have no experience with Markdown, git, GitHub, or the command line. As such, git commands from the command line will not be used in this guide. If you would like to learn how to use git commands from the command line, check out the [More Resources](https://jasmine-tabuzo.github.io/README.html#more-resources) section of this guide.
+This guide is intended for Windows users. Additionally, this guide assumes you have no experience with Markdown, git, GitHub, or the command line. As such, git commands from the command line will not be used in this guide. If you would like to learn how to use git commands from the command line, check out the [More Resources](https://github.com/jasmine-tabuzo/jasmine-tabuzo.github.io#more-resources) section of this guide.
 
 ## Prerequisites
 - A [GitHub](https://github.com/) account 
     - Microsoft provides a great tutorial on [creating a GitHub account](https://learn.microsoft.com/en-us/visualstudio/version-control/git-create-github-account?view=vs-2022).
 - A resume in Markdown 
-    - You can find a Markdown tutorial in the [More Resources](https://jasmine-tabuzo.github.io/README.html#more-resources) section of this guide.
+    - You can find a Markdown tutorial in the [More Resources](https://github.com/jasmine-tabuzo/jasmine-tabuzo.github.io#more-resources) section of this guide.
 - [Visual Studio Code](https://code.visualstudio.com/)
 - Jekyll's installation requirements ([Ruby](https://www.ruby-lang.org/en/downloads/) version 2.5.0 or higher, [RubyGems](https://rubygems.org/pages/download), [GCC](https://gcc.gnu.org/install/) and [Make](https://www.gnu.org/software/make/))
     - If you do not already have these installed, you can follow the first two steps of this [Jekyll guide](https://jekyllrb.com/docs/installation/windows/). 
@@ -24,48 +24,55 @@ This guide is intended for Windows users. Additionally, this guide assumes you h
 
 > Throughout this section, I will refer to Andrew Etter's book, *Modern Technical Writing: An Introduction to Software Documentation* to describe some key principals in technical communication. 
 > 
-> A link to Etter's book can be found in the [More Resources](https://jasmine-tabuzo.github.io/README.html#more-resources) section of this guide.
+> A link to Etter's book can be found in the [More Resources](https://github.com/jasmine-tabuzo/jasmine-tabuzo.github.io#more-resources) section of this guide.
 
 ### 1. Create your GitHub repository
 
 > *Etter's Key Principal: Share/host documents on a distributed version control system* 
 > 
-> We will be using GitHub in this guide because it is a distributed version control system (DVCS). As Etter states, a DVCS has better performance than a centralized version control system, allows for offline work, and is great for doing concurrent work on the same files. Thus, by using GitHub, you can make changes to your resume while offline and then push those changes to your repository when you're ready to update your hosted resume. Additionally, you can work on your resume from multiple computers by editing the file directly on GitHub! This is a great feature to have if you need to quickly edit your resume before a potential employer sees it.
+> We will be using GitHub in this guide because it is a distributed version control system (DVCS). As Etter states, a DVCS has better performance than a centralized version control system, allows for offline work, and is great for doing concurrent work on the same files. This means that you can work on your resume on multiple computers by [creating local copies of your repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository). This is a great feature to have if you need to quickly edit your resume on a different computer before a potential employer sees it. Etter also suggests to add a README.md in the root of your repository to store documentation. This is so that your documentation and code can stay in sync. This will be helpful if you ever want others to contribute to your website as well.  
 
 1. Login to your account on GitHub 
-2. Select the **+** dropdown in the navigation bar    
+2. Select the **+** dropdown in the navigation bar        
     ![New Repository Dropdown](images/repository-dropdown.PNG)
-2. Select **New Repository**     
+2. Select **New Repository**         
     ![New Repository Button](images/new-repository.PNG)
-3. Set the repository name to `<your GitHub username>.github.io`    
+3. Set the repository name to `<your GitHub username>.github.io`        
     ![Repository Name](images/repository-name.PNG)
+4. Select `Public`    
+    ![Select Public](images/repository-public.PNG)
+5. Check the box for `Add a README file`     
+    ![Add README](images/repository-readme.PNG)
+6. Select `Create repository`     
+    ![Create repository](images/repository-create.PNG)
 
 ### 2. Create a Jekyll Site
 
 > *Etter's Key Principle: Format a document with a static site generator*    
 > 
->  We will be using Jekyll to generate the site that hosts your resume. Jekyll is a static site generator. Etter states many advantages of using static websites, such as speed, portability, and simplicity. Static websites can be hosted on GitHub Pages and don't require databases, additional installations, or server-side application dependencies. Additionally, you don't have to worry about your resume being hacked or spammed by bots because of the site's simplicity. You *could* host your resume without a generator. But applying HTML and CSS to your resume would require a lot of work. A static site generator can process your website for you. You just have to give it the content and a theme. Thus, an advantage of using a static site generator is that you can just modify the content of your resume and process the website again without having to touch the HTML or CSS. 
+>  We will be using Jekyll to generate the site that hosts your resume. Jekyll is a static site generator. Etter states many advantages of using static websites, such as speed, portability, and simplicity. Static websites can be hosted on GitHub Pages and don't require databases, additional installations, or server-side application dependencies. Additionally, you don't have to worry about your resume being hacked or spammed by bots because of the site's simplicity. You *could* host your resume without a generator. But applying HTML and CSS to your resume would require a lot of work. A static site generator can process your website for you. You just have to give it the content and a theme. Thus, an advantage of using a static site generator is that you can modify the content of your resume and process the website again without having to touch the HTML or CSS. 
 
 1. Type `Command Prompt` into the Windows search bar.
 2. Hit **Enter** 
     - A new terminal should appear. 
 3. Enter `gem install jekyll bundler` into the terminal to install Jekyll
-    - If you want to check if Jekyll has been installed, enter `jekyll -v` into the terminal. After entering that command, you should see `jekyll <some version number>` (for example, `jekyll 4.3.2`).
-3. Open the **File Explorer** ![File Explorer](images/file-explorer.PNG)
-4. Navigate to a folder where you want your site to be stored. 
-5. Enter `cmd` into the File Explorer's address bar   
+4. Check if Jekyll has been installed
+    - Enter `jekyll -v` into the terminal. After entering that command, you should see `jekyll <some version number>` (for example, `jekyll 4.3.2`).
+5. Open the **File Explorer** ![File Explorer](images/file-explorer.PNG)
+6. Navigate to a folder where you want your site to be stored. 
+7. Enter `cmd` into the File Explorer's address bar   
     - A terminal for this folder should appear, as shown in the GIF below.     
     ![Open Folder Terminal](images/open-folder-terminal.gif)
-6. Enter `jekyll new myresume` into the terminal
+8. Enter `jekyll new myresume` to create a new Jekyll site 
     ![jekyll new myresume](images/jekyll-new-myresume.gif)
-7. Enter `cd myresume` into the terminal    
+9. Enter `cd myresume` to move to the site's folder
     ![cd myresume](images/cd-myresume.gif)
-8. Enter `bundle add webrick` into the terminal    
+10. Enter `bundle add webrick`    
     ![bundle add webrick](images/bundle-add-webrick.gif)
-9. Enter `bundle exec jekyll serve` into the terminal    
+11. Enter `bundle exec jekyll serve`   
     ![bundle exec jekyll serve](images/jekyll-serve.gif)
-10. Open a web browser
-11. Navigate to http://localhost:4000 to see your generated website.     
+12. Open a web browser
+13. Navigate to http://localhost:4000 to see your generated website.     
     ![New Site on localhost](images/localhost-new-site.gif)
 
 ### 3. Add your resume to the site
@@ -78,11 +85,11 @@ This guide is intended for Windows users. Additionally, this guide assumes you h
 2. Navigate to the `myresume` folder
 3. Delete the `index.md` file
 4. Delete the `about.md` file
-5. Move or copy your resume Markdown file into the folder 
+5. Move or copy your resume Markdown file into the `myresume` folder 
 6. Rename your resume file to `index.md`
 7. Open **Visual Studio Code**
 8. Open the `myresume` folder in Visual Studio Code
-9. Open your resume file, `index.md`, in Visual Studio Code
+9. Select your resume file, `index.md`
 10. Add the following lines of code to the top of your resume file, including the dashed lines:    
 ```
 ---
@@ -110,14 +117,21 @@ title: Resume
 ### 5. Upload your Jekyll site to GitHub
 
 1.  Go to your repository on GitHub
-2.  Select **Add file** 
-3.  Select **Upload files**
+2.  Select **Add file**     
+    ![Add file](images/add-file.png)
+3.  Select **Upload files**    
+    ![Upload files](images/upload-files.PNG)
 4.  Open the **File Explorer** ![File Explorer](images/file-explorer.PNG)
 5.  Navigate to the `myresume` folder
-6.  Drag all of the files in this folder to your repository 
+6.  Drag all of the files in this folder to your repository    
+    ![Drag files to repository](images/upload-files.gif)
 7.  Commit the changes 
-8.  Navigate to the Actions tab in your repository
-9.  Wait for the page to deploy
+    ![Commit](images/commit-changes.png)
+8.  Select the Actions tab in your repository
+    ![Actions](images/actions.png)
+9.  Wait for the page to deploy.
+    - The top-most workflow will display a green checkmark when it has succeeded. 
+    ![Loading deploy](images/loading-deploy.gif)
 9.  Navigate to `[your GitHub username].github.io` in your browser. 
 
 Congratulations! You have successfully hosted your resume on GitHub Pages using Jekyll and Visual Studio Code. 
