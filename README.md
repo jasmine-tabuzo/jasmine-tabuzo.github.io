@@ -1,7 +1,7 @@
-# How to Host a Resume on Github Pages using VSCode and Jekyll
+# How to Host a Resume on Github Pages using VSCode and Jekyll on Windows
 
 ## Purpose
-This guide will teach you how to host a resume on GitHub Pages using Visual Studio Code and Jekyll.
+This guide will teach you how to host a resume on GitHub Pages using Visual Studio Code and Jekyll on Windows.
 
 Additionally, this guide will teach you some of Andrew Etter's key principals in technical communication, namely:      
 
@@ -11,10 +11,14 @@ Additionally, this guide will teach you some of Andrew Etter's key principals in
 
 ## Prerequisites
 - A [GitHub](https://github.com/) account 
-    - [How to Create a GitHub Account](https://learn.microsoft.com/en-us/visualstudio/version-control/git-create-github-account?view=vs-2022)
+    - Microsoft provides a great tutorial on [creating a GitHub account](https://learn.microsoft.com/en-us/visualstudio/version-control/git-create-github-account?view=vs-2022).
 - A resume in Markdown 
     - You can find a Markdown tutorial in the [More Resources](https://jasmine-tabuzo.github.io/README.html#more-resources) section of this guide.
 - [Visual Studio Code](https://code.visualstudio.com/)
+- Jekyll installation prerequisites (Ruby version 2.5.0 or higher, RubyGems, GCC and Make)
+    - If you do not already have these installed, you can follow the first two steps of this [Jekyll guide](https://jekyllrb.com/docs/installation/windows/). 
+    - I recommend using the `Ruby+Devkit 3.1.3-1 (x64)` version. This version was used to create the resume demo. Other versions may still be compatible, but I recommend using this version to avoid potential implications that are not covered in this guide. 
+- A computer that runs Windows OS
 
 ## Instructions
 
@@ -26,14 +30,13 @@ Additionally, this guide will teach you some of Andrew Etter's key principals in
 
 > *Etter's Key Principal: Share/host documents on a distributed version control system* 
 > 
-> We will be using GitHub in this guide because it is a distributed version control system (DVCS). As Etter states, a DVCS has better performance, allows for offline work, and is great for doing concurrent work on the same files. Thus, by using GitHub, you can make changes to your resume while offline and then push those changes to your repository when you're ready to update your hosted resume. Additionally, you can work on your resume from multiple computers by editing the file directly on GitHub! 
+> We will be using GitHub in this guide because it is a distributed version control system (DVCS). As Etter states, a DVCS has better performance, allows for offline work, and is great for doing concurrent work on the same files. Thus, by using GitHub, you can make changes to your resume while offline and then push those changes to your repository when you're ready to update your hosted resume. Additionally, you can work on your resume from multiple computers by editing the file directly on GitHub! This is a great feature to have if you need to quickly edit your resume before a potential employer sees it!
 
 1. Login to your account on GitHub 
 2. Select the **+** dropdown in the navigation bar    
     ![New Repository Dropdown](images/repository-dropdown.PNG)
 2. Select **New Repository**     
     ![New Repository Button](images/new-repository.PNG)
-
 3. Set the repository name to `<your GitHub username>.github.io`    
     ![Repository Name](images/repository-name.PNG)
 
@@ -41,11 +44,14 @@ Additionally, this guide will teach you some of Andrew Etter's key principals in
 
 > *Etter's Key Principle: Format a document with a static site generator*    
 > 
->  As Etter describes, static sites have "speed, simplicity, portability, and security."  
+>  Jekyll is a static site generator. Etter states that static sites have "speed, simplicity, portability, and security."  
 
-1. Install Ruby by following steps 1 & 2 of these [instructions](https://jekyllrb.com/docs/installation/windows/)
-2. Install Jekyll by following steps 3 & 4 of these [instructions](https://jekyllrb.com/docs/installation/windows/)
-3. Create a new Jekyll site by following [steps 2-6](https://jekyllrb.com/docs/) 
+1. Type `Command Prompt` into the Windows searchbar.
+2. Hit **Enter** 
+    - A new terminal should appear. 
+3. Install Jekyll by entering `gem install jekyll bundler` into the terminal 
+    - To check if Jekyll has been installed, enter `jekyll -v` into the terminal. After entering that command, you should see `jekyll <some version number>` (for example, `jekyll 4.3.2`).
+4. Create a new Jekyll site by following [steps 2-6](https://jekyllrb.com/docs/) 
 
 ### 3. Add your resume to the site
 
@@ -116,3 +122,5 @@ You should now have a hosted resume that looks like the one shown below:
 
 - Can I add pictures to my site?
     - Yes, you can add pictures to your site. To learn how to add pictures using markdown, follow this [lesson](https://www.markdowntutorial.com/lesson/4/).
+
+- How do I work on my hosted resume offline? 
