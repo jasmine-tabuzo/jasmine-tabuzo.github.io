@@ -16,7 +16,7 @@ This guide is intended for Windows users. Additionally, this guide assumes you h
 - A resume in Markdown 
     - You can find a Markdown tutorial in the [More Resources](https://github.com/jasmine-tabuzo/jasmine-tabuzo.github.io#more-resources) section of this guide.
 - [Visual Studio Code](https://code.visualstudio.com/)
-- Jekyll's installation requirements ([Ruby](https://www.ruby-lang.org/en/downloads/) version 2.5.0 or higher, [RubyGems](https://rubygems.org/pages/download), [GCC](https://gcc.gnu.org/install/) and [Make](https://www.gnu.org/software/make/))
+- [Ruby](https://www.ruby-lang.org/en/downloads/) version 2.5.0 or higher, [RubyGems](https://rubygems.org/pages/download), [GCC](https://gcc.gnu.org/install/) and [Make](https://www.gnu.org/software/make/)
     - If you do not already have these installed, you can follow the first two steps of this [Jekyll guide](https://jekyllrb.com/docs/installation/windows/). 
     - I recommend using the `Ruby+Devkit 3.1.3-1 (x64)` version because this version was used to create the resume demo. 
 
